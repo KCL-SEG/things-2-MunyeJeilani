@@ -6,13 +6,7 @@
     <h1>Sign Up</h1>
     <form action="{% url 'home' %}" method="post">
         {% csrf_token %}
-        <!-- Add a textarea element with maxlength="120" -->
-        <label for="description">Description:</label>
-        <textarea id="description" name="description" maxlength="120"></textarea>
-        
-        <!-- Include the rest of the form fields using {{ form }} -->
-        {{ form.name }}
-        {{ form.quantity }}
+        {{form}}
         
         <input type="submit" value="Sign Up">
     </form>
