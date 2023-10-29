@@ -9,3 +9,4 @@ class ThingForm(forms.ModelForm):
 
     description = forms.CharField(label = 'Description' ,widget=forms.Textarea())
     quantity = forms.IntegerField(label = 'Quantity' , widget=forms.NumberInput())
+    
