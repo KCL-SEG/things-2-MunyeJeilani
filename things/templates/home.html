@@ -1,11 +1,14 @@
 <html>
 <head>
-  <title>Things</title>
+    <title>Clucker</title>
 </head>
 <body>
-  <h1>
-    Things
-  </h1>
-  <p>Some stuff about things goes here.</p>
+    <h1>Sign Up</h1>
+    <form action="{% url 'sign_up' %}" method="post">
+        {% csrf_token %}
+      {{form}}
+        <input type="submit" value="Sign Up">
+    </form>
 </body>
 </html>
+
